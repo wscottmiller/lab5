@@ -8,16 +8,11 @@ $(document).ready(function() {
 	console.log("whaaaaaaaat");
 });
 
-
-
-	//console.log(name);
-
-
 })
 
-function nameClick(){
+function nameClick(e){
 
-	// preventDefault();
+	 e.preventDefault();
 
 	//grab the text
 	var newName = $(this).text();
@@ -37,7 +32,7 @@ function nameClick(){
 function initializePage() {
 	console.log("Javascript connected!");
 
-		$("#name").click(nameClick);
+		$("a").click(nameClick);
 }
 
 
